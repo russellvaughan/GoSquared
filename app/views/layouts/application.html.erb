@@ -5,14 +5,27 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
-<script>
-  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-  insertBefore(d,q)}(window,document,'script','_gs');
+	<script>
+	!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+		arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+	d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+	insertBefore(d,q)}(window,document,'script','_gs');
 
-  _gs('GSN-589158-M');
-</script>
+	_gs('GSN-589158-M');
+	_gs('identify', {
+    // TODO User ID
+    // id: 123,
+
+    // TODO User's full name
+    // name: 'Jony Ive',
+
+    // TODO User's email address
+    // email: 'jony@apple.com',
+
+    // TODO User's signup date
+    // created_at: '2015-01-01 00:00:00'
+  });
+	</script>
 </head>
 <body>
 	<p class="notice"><%= notice %></p>

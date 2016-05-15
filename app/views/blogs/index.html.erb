@@ -1,1 +1,12 @@
-Hello, World
+<center><h2> Blogs </h2> <center> </br>
+	<center><a href= 'blogs/new'><h3> Add a blog </h3> </a><center> <br>
+
+	<div class = "container">
+		<div class='row center-block'>
+			<% @blogs.each do |blog| %>
+			<div class="track_container col-sm-3">
+				<%= link_to blog.title, blog_path(blog), :class => "ghost-button"%> 
+			</div> 
+			<% end %>
+		</div>
+	</div>

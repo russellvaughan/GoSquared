@@ -130,3 +130,40 @@ a {
    background-color:  #fff;
    border-color:  #edeeee;
 }
+
+.track_container {
+  width: 30%;
+  margin-right: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #eeefef;
+  border-radius: 5px;
+}
+
+
+
+
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #F39C12;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+   text-decoration: none !important;
+}

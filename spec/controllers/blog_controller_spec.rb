@@ -2,11 +2,13 @@ require 'rails_helper'
 
 RSpec.describe BlogsController, type: :controller do
 
+	login_user
+
 	before :each do
 		@blogs = create(:blog)
 	end
 
-	describe "GET #index" do 
+	describe "GET #index" do 		 
 		it 'renders all blogs' do 
 			get :index
 			expect(assigns(:blogs)).to eq([@blogs])
@@ -19,19 +21,26 @@ RSpec.describe BlogsController, type: :controller do
 			assert_response :success
 		end
 
-  	it "assigns the requested contact to @contact" do
-    get :show, id: @blogs
-    expect(assigns(:blog)).to eq(@blogs)
-  	end
-
+		it "assigns the requested contact to @contact" do
+			get :show, id: @blogs
+			expect(assigns(:blog)).to eq(@blogs)
+		end
 	end
 
 	describe "POST create" do
-     login_user
-    it "creates a new blog" do
-      expect{
-        post :create, blog: attributes_for(:blog)
-      }.to change(Blog,:count).by(1)
-    end 
-  end
-end
+		it "creates a new blog" do
+			expect{
+				post :create, blog: attributes_for(:blog)
+				}.to change(Blog,:count).by(1)
+			end 
+		end
+
+		describe 'GET #new' do
+			it 'assigns a new blog to @blog' do
+				get :new
+				expect(assigns(:blogs)).to be_a_new(Blog)
+			end
+		end
+
+
+	end

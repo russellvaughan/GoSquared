@@ -4,10 +4,10 @@
 	
 		<div class='row center-block'>
 			<% @blogs.each do |blog| %>
-			<div class="track_container col-sm-3">
+			 <div class="track_container col-sm-3">
 				<%= link_to blog.title, blog_path(blog) %> <br>
-				<%= blog.created_at.strftime("%m/%d/%Y")%> <br>
-				<%= blog.user.email %> 
+				<%= blog.created_at.strftime("%m/%d/%Y")%> <hr>
+				<%= blog.content[0...-4] %><strong><%=link_to "...click for more",  blog_path(blog)%></strong><br>
 			</div> 
 			<% end %>
 		</div>

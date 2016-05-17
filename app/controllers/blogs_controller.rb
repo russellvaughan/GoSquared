@@ -23,10 +23,6 @@ class BlogsController < ApplicationController
 		end	
 	end
 
-	def blog_params
-    params.require(:blog).permit(:title, :content)  
-  end
-
  private
 
   def set_user 
@@ -43,5 +39,11 @@ class BlogsController < ApplicationController
       redirect_to new_user_session_path
     end
 end
+
+
+	def blog_params
+    params.require(:blog).permit(:title, :content)  
+  end
+
  
 end

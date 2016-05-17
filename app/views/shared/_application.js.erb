@@ -12,4 +12,13 @@
   email: gon.email,	
   });
 
+  _gs('event', 'Clicked Like', {
+  extra: 'event',
+  details: true
+});
+
+  $('.likes-link').on('click', function() {
+  _gs('event', 'Clicked Like');
+});
+
 	</script>

@@ -8,6 +8,8 @@
 				<%= link_to blog.title, blog_path(blog) %> <br>
 				<%= blog.created_at.strftime("%m/%d/%Y")%> <hr>
 				<%= blog.content[0...-4] %><strong><%=link_to "...click for more",  blog_path(blog)%></strong><br>
+				<%= link_to "Like", blog_likes_path(blog), class: 'likes-link' %>
+						<span class ='likes_count'>  <%= blog.likes.count %> </span><%= ' like'.pluralize(blog.likes.count) %>
 			</div> 
 			<% end %>
 		</div>

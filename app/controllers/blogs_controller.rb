@@ -26,12 +26,10 @@ class BlogsController < ApplicationController
  private
 
   def set_user 
-  	if current_user
     gon.push({
   	:id => current_user.id,
   	:email => current_user.email
 		})
-  end
   end
 
 	 def require_login

@@ -3,7 +3,7 @@
 ## Description
 
 A simple blogging web application including a user login process with GoSquared implemented.
-GoSquared's Basic Tracking has been integrated as well as Vistor Tracking. A simple 'like' feature for a blog posts has been created as way to make use of GoSquared Event Tracking.
+GoSquared's Basic Tracking has been integrated as well as Vistor Tracking. A simple 'like' feature for blog posts has been created as way to make use of GoSquared Event Tracking.
 
 
 ## Approach to Testing & Development:

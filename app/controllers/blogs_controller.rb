@@ -40,7 +40,6 @@ class BlogsController < ApplicationController
     end
 end
 
-
 	def blog_params
     params.require(:blog).permit(:title, :content)  
   end

@@ -23,7 +23,6 @@ class BlogsController < ApplicationController
 		end	
 	end
 
- private
 
   def set_user 
   	if current_user
@@ -33,6 +32,9 @@ class BlogsController < ApplicationController
 		})
   end
   end
+
+   private
+
 
 	 def require_login
     unless logged_in?

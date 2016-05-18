@@ -9,7 +9,7 @@ GoSquared's Basic Tracking has been integrated as well as Vistor Tracking. A sim
 ## Approach to Testing & Development:
 
 - Test Driven Development was used to build application.
-- Factory Girl used to substitute fixture.
+- Factory Girl used to substitute fixtures.
 - Single Responsibilty Principle adhered to wherever possible.
 - Deployed to Heroku
 

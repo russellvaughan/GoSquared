@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :like do
-    blog nil
+    blog 1
   end
 end

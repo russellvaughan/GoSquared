@@ -7,10 +7,13 @@
 
 	_gs('GSN-589158-M');
 
-	_gs('identify', {  
-	id:	gon.id, 
-  email: gon.email,	
-  });
+	console.log(gon.id)
+	console.log(gon.email)
+
+	_gs('identify', {
+  id: gon.id,
+  email: gon.email,
+});
 
   _gs('event', 'Clicked Like', {
   extra: 'event',

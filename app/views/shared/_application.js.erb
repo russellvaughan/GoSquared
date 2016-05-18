@@ -1,30 +1,29 @@
 	
 <script>
-	!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-		arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-	d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-	insertBefore(d,q)}(window,document,'script','_gs');	
+!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+	arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+insertBefore(d,q)}(window,document,'script','_gs');	
 
-	_gs('GSN-589158-M');
+_gs('GSN-589158-M');
 
-	console.log(gon.id)
-	console.log(gon.email)
+console.log(gon.id)
+console.log(gon.email)
 
-	_gs('identify', {
-  id: gon.id,
-  email: gon.email,
+_gs('identify', {
+	id: gon.id,
+	email: gon.email,
 });
 
-  _gs('event', 'Clicked Like', {
-  extra: 'event',
-  details: true
+_gs('event', 'Clicked Like', {
+	extra: 'event',
+	details: true
 });
 
-   $('.likes-link').on('click', function() {
-  _gs('event', 'Clicked Like');
+$('.likes-link').on('click', function() {
+	_gs('event', 'Clicked Like');
 });
 
-	</script>
+</script>
 
 
-	

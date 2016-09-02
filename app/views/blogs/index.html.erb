@@ -1,7 +1,6 @@
 <center><h2> Blogs </h2> <center> </br>
 	<center><a href= 'blogs/new'><h4> Add a blog </h4> </a><center> <br>
 
-	
 		<div class='row center-block'>
 			<% @blogs.each do |blog| %>
 			 <div class="track_container col-sm-3">
@@ -10,7 +9,7 @@
 				<%= blog.content[0...-4] %><strong><%=link_to "...click for more",  blog_path(blog)%></strong><br>
 				<%= link_to "Like", blog_likes_path(blog), class: 'likes-link' %>
 						<span class ='likes_count'>  <%= blog.likes.count %> </span><%= ' like'.pluralize(blog.likes.count) %>
-			</div> 
+			</div>
 			<% end %>
 		</div>
 	</div>

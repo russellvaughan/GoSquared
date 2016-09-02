@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
 	before_action :set_user, :require_login
+  # after_filter :send_body
 
 
 	def index
@@ -48,6 +49,7 @@ end
 def blog_params
   params.require(:blog).permit(:title, :content)
 end
+
 
 
 end

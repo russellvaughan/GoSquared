@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'gon'
 # gem 'gosquared'
 # gem 'intercom-rails'
-gem 'russ_inject', '~> 0.4.0', :require=> "my_gem"
+gem 'russ_inject', '~> 0.4.6', :require=> "my_gem"
 
 
 # Use ActiveModel has_secure_password

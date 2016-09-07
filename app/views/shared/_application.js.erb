@@ -1,33 +1,19 @@
 
-// <script>
-// !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-// 	arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-// d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-// insertBefore(d,q)}(window,document,'script','_gs');
+<script>
+setTimeout(function() {
+_gs('identify', {
+	id: gon.id,
+	email: gon.email,
+});
 
-// _gs('GSN-589158-M');
+_gs('event', 'Clicked Like', {
+	extra: 'event',
+	details: true
+});
 
-// _gs('identify', {
-// 	id: gon.id,
-// 	email: gon.email,
-// });
+$('.likes-link').on('click', function() {
+	_gs('event', 'Clicked Like');
+});
+}, 1000);
 
-// _gs('event', 'Clicked Like', {
-// 	extra: 'event',
-// 	details: true
-// });
-
-// $('.likes-link').on('click', function() {
-// 	_gs('event', 'Clicked Like');
-// });
-
-// </script>
-
-// <div id="google_translate_element"></div><script type="text/javascript">
-// function googleTranslateElementInit() {
-//   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, autoDisplay: false}, 'google_translate_element');
-// }
-// </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
+</script>

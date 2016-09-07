@@ -18,8 +18,8 @@ class BlogsController < ApplicationController
 
 	def create
 		blog = current_user.blogs.new(blog_params)
-    gs = GoSquared.new("1F6DLEGZKZ2QUK48","GSN-589158-M")
-    gs.tracking.event({person_id: "email:#{current_user.email}", event: { name: 'added blog post ' } })
+    gs = GoSquared::RubyLibrary.new("1F6DLEGZKZ2QUK48","GSN-589158-M")
+    gs.tracking.event({person_id: "email:#{current_user.email}", event: { name: 'the new gem is working' } })
     gs.tracking.post
     if blog.save
      flash[:success] = "the blog was added!"

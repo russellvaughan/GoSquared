@@ -24,9 +24,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'gon'
-# gem 'gosquared'
-# gem 'intercom-rails'
-gem 'russ_inject', '~> 0.4.6', :require=> "my_gem"
+gem 'gosquared', '~> 2.0.0'
 
 
 # Use ActiveModel has_secure_password

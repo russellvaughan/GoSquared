@@ -23,8 +23,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'gon'
-gem 'gosquared', '~> 2.0.0'
+gem 'gs-rails', :path => '/Users/russellvaughan/dev-training/gosquared-rails', :require => 'gosquared'
 
 
 # Use ActiveModel has_secure_password

@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-	before_action :set_user, :require_login
+	before_action :require_login, :authenticate_user!
   # after_filter :send_body
 
 
@@ -28,14 +28,14 @@ class BlogsController < ApplicationController
  end
 
 
- def set_user
-   if current_user
-    gon.push({
-     :id => current_user.id,
-     :email => current_user.email
-     })
-  end
-end
+#  def set_user
+#    if current_user
+#     gon.push({
+#      :id => current_user.id,
+#      :email => current_user.email
+#      })
+#   end
+# end
 
 private
 

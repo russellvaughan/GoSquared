@@ -1,10 +1,14 @@
+<script>
+_gs('unidentify');
+</script>
+
+
 <div class = "jumbotron">
 	<div class = "textbox">
-<h2> <center> <%= @blog.title %>  </center></h2> </a> 
+<h2> <center> <%= @blog.title %>  </center></h2> </a>
 			<center><%= @blog.created_at.strftime("%m/%d/%Y")%> </center> <br>
 			 <%= @blog.content %>
-
 	</br>
 </div>
-</div> 
-	<%= link_to "Back to Blogs", blogs_path, :class => "ghost-button"%> 
+</div>
+	<%= link_to "Back to Blogs", blogs_path, :class => "ghost-button"%>

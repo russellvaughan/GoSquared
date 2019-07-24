@@ -235,6 +235,7 @@ DEPENDENCIES
   database_cleaner
   devise
   factory_girl_rails
+  i18n
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)
